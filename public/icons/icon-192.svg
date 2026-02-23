@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" rx="20" fill="#1e40af"/>
+  <text x="96" y="72" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="38" font-family="Arial, sans-serif" font-weight="bold">CBT</text>
+  <text x="96" y="108" dominant-baseline="middle" text-anchor="middle" fill="#93c5fd" font-size="22" font-family="Arial, sans-serif">SD/MI</text>
+  <path d="M57.6 138.24 L96 119.04 L134.4 138.24" fill="none" stroke="#93c5fd" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="66" y="138" width="60" height="4" rx="2" fill="#93c5fd"/>
+</svg>

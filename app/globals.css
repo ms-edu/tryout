@@ -1,0 +1,62 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cbt-primary: #1e40af;
+  --cbt-secondary: #3b82f6;
+  --cbt-success: #16a34a;
+  --cbt-danger: #dc2626;
+  --cbt-warning: #d97706;
+  --cbt-header-height: 56px;
+  --cbt-footer-height: 60px;
+  --cbt-sidebar-width: 200px;
+}
+
+/* Disable text selection in exam */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* ANBK-style question area */
+.question-area {
+  min-height: calc(100vh - var(--cbt-header-height) - var(--cbt-footer-height));
+}
+
+/* Answer option ANBK style */
+.answer-option {
+  @apply flex items-start gap-3 p-3 rounded-lg border-2 cursor-pointer transition-all duration-150;
+  @apply border-gray-200 hover:border-blue-400 hover:bg-blue-50;
+}
+.answer-option.selected {
+  @apply border-blue-600 bg-blue-50 font-medium;
+}
+.answer-option-key {
+  @apply flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold;
+  @apply bg-gray-100 text-gray-700;
+}
+.answer-option.selected .answer-option-key {
+  @apply bg-blue-600 text-white;
+}
+
+/* Navigation grid */
+.nav-grid-item {
+  @apply w-9 h-9 rounded flex items-center justify-center text-xs font-semibold cursor-pointer transition-colors;
+}
+.nav-grid-item.answered { @apply bg-green-500 text-white; }
+.nav-grid-item.flagged { @apply bg-red-400 text-white; }
+.nav-grid-item.current { @apply ring-2 ring-offset-1 ring-blue-600; }
+.nav-grid-item.unanswered { @apply bg-gray-200 text-gray-600 hover:bg-gray-300; }
+
+/* Timer */
+.timer-normal { @apply text-white; }
+.timer-warning { @apply text-yellow-300 animate-pulse; }
+.timer-danger { @apply text-red-300 animate-pulse; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 3px; }

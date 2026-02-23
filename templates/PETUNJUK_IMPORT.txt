@@ -1,0 +1,41 @@
+PETUNJUK PENGISIAN TEMPLATE SOAL
+=================================
+
+Gunakan file ini sebagai referensi format Excel.
+Buat file Excel (.xlsx) dengan kolom-kolom berikut:
+
+KOLOM WAJIB:
+- soal       : Teks pertanyaan (bisa multiline)
+- a          : Pilihan A
+- b          : Pilihan B  
+- c          : Pilihan C
+- d          : Pilihan D
+- kunci      : Jawaban benar (isi: a, b, c, atau d)
+
+KOLOM OPSIONAL:
+- tipe       : "literasi" atau "numerasi" (default: literasi)
+- image_url  : URL gambar soal (opsional)
+
+CONTOH ISI:
++----+----------------------------------+----------+----------+----------+----------+-------+-----------+
+| No | soal                             | a        | b        | c        | d        | kunci | tipe      |
++----+----------------------------------+----------+----------+----------+----------+-------+-----------+
+| 1  | Apa ibukota negara Indonesia?    | Surabaya | Jakarta  | Bandung  | Medan    | b     | literasi  |
+| 2  | Berapa hasil dari 12 + 15?       | 25       | 27       | 28       | 30       | b     | numerasi  |
+| 3  | Siapakah proklamator Indonesia?  | Soekarno | Soeharto | Habibie  | Megawati | a     | literasi  |
++----+----------------------------------+----------+----------+----------+----------+-------+-----------+
+
+TEMPLATE UNTUK DATA SISWA:
++---------------+----------------------+-------+--------+
+| nis           | nama                 | kelas | pin    |
++---------------+----------------------+-------+--------+
+| 1234567890    | Ahmad Budi Santoso   | 6A    | 123456 |
+| 1234567891    | Siti Rahayu Putri    | 6A    | 654321 |
+| 1234567892    | Budi Santoso         | 6B    | 111222 |
++---------------+----------------------+-------+--------+
+
+CATATAN:
+- PIN opsional. Jika kosong, NIS digunakan sebagai password.
+- Kelas opsional.
+- NIS harus unik untuk setiap siswa.
+- Gunakan format Excel (.xlsx), bukan .csv.
