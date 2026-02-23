@@ -72,7 +72,7 @@ export async function registerBackgroundSync(tag: string): Promise<void> {
   if (!isBrowser || !("serviceWorker" in navigator) || !("SyncManager" in window)) return;
   try {
     const reg = await navigator.serviceWorker.ready;
-    await reg.sync.register(tag);
+    await (reg as any).sync.register(tag);
   } catch (err) {
     console.warn("Background sync registration failed:", err);
   }
